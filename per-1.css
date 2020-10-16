@@ -1,0 +1,335 @@
+/*  Gobal CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Bungee+Shade&family=Codystar&family=Ewert&family=Monoton&family=Pinyon+Script&family=UnifrakturCook:wght@700&display=swap');
+
+/* font families 
+
+font-family: 'Akronim', cursive;
+font-family: 'Bungee Shade', cursive;
+font-family: 'Codystar', cursive;
+font-family: 'Ewert', cursive;
+font-family: 'Monoton', cursive;
+font-family: 'Pinyon Script', cursive;
+font-family: 'UnifrakturCook', cursive;
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --color-1: #ffc100;
+    --color-2: #ff9a00;
+    --color-3: #ff7400;
+    --color-4: #ff4d00;
+    --color-5: #ff0000;
+    --color-6: #fff;
+    --color-7: #000;
+    --bg-1:linear-gradient(90deg, var(--color-5) 7%, var(--color-1) 93%);
+}
+
+
+/* #header CSS */
+
+
+#header {
+    width: 100%;
+    height: 150vh;
+    background-image: var(--bg-1) ;
+    position: relative;
+}
+
+
+
+/*  Nav-Bar CSS */
+
+.navbar-brand {
+    color:var(--color-7);
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 2rem;
+}
+.navbar-brand:hover {
+    color: var(--color-6);
+}
+.navbar .iconify {
+    width: 30px;
+    height: 30px;
+}
+.navbar-collapse {
+    background-color: rgba(0,0,0,.6);
+    z-index: 2;
+    border-radius: 10px;
+}
+.nav-item {
+    border: solid 2px transparent;
+    border-radius: 10px;
+    transition: 0.5s;
+    z-index: 1;
+}
+.nav-item:hover {
+    background-color: var(--color-5);
+}
+
+.nav-item a {
+    color: var(--color-6);
+    font-size: 1.2rem;
+}
+.hero-1 {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    right: 20px;
+    bottom: -100px;
+    background-color: var(--color-6);
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px #000;
+}
+.hero-1 .hero-image {
+    width: 380px;
+    height: 480px;
+    background-image: url(image-1.jpg);
+    background-size: cover;
+    background-position:50%;
+    margin: 30px auto;
+    border-radius: 13px;
+}
+.hero-1 .hero-text {
+    width: 100%;
+    padding: 50px 20px;
+    
+}
+
+.social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.social .iconify {
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px;
+}
+
+.facebook {
+    color:#3b5998 ;
+}
+.google {
+    color:#dd4b39 ;
+}
+.twitter {
+    color:#1DA1F2 ;
+}
+.whatsapp {
+    color: #4DCB5B ;
+}
+.linkedin {
+    color: #0077B5 ;
+}
+
+/*  About CSS */
+
+
+#about {
+    width: 100%;
+    height: 250vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.skills {
+    width: 90%;
+}
+.skills p {
+    line-height: 10px;
+    font-weight: 600;
+}
+.about-text {
+    width: 90%;
+}
+.progress {
+    margin: 10px 0px;
+}
+.progress-bar {
+    background-color: var(--color-1);
+}
+.box {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--color-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 18px;
+    font-size: 1.4rem;
+    margin: 20px auto;
+}
+.box:nth-of-type(1){
+    background-color: var(--color-2);
+}
+.box:nth-of-type(2){
+    background-color: var(--color-3);
+}
+.box:nth-of-type(3){
+    background-color: var(--color-4);
+}
+.box:nth-of-type(4){
+    background-color: var(--color-5);
+    color: var(--color-1);
+}
+.box p:nth-child(1){
+    font-size: 2.5rem;
+    color: var(--color-6);
+}
+.section-line {
+    width: 80%;
+    height: 5px;
+    margin: 20px auto;
+    background-image: var(--bg-1);
+}
+#for-client {
+    width: 100%;
+    height: 280vh;
+}
+.service-card {
+    width: 90%;
+    height: 80vh;
+    box-shadow: 4px 4px 10px #000;
+    margin: 20px auto;
+    border-radius: 15px;
+    position: relative;
+   
+}
+.service-card .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    border-top-right-radius: 13px;
+    clip-path: circle(80.0% at 100% 0%);
+    background-image: var(--bg-1);
+}
+.service-card .iconify {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+}
+.service-card .contents {
+    position: absolute;
+    top: 50%;
+    padding: 0px 20px;
+} 
+#footer {
+    width: 100%;
+    height: 80vh;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #666;
+}
+.company {
+    width: 80%;
+    
+}
+#footer h4 {
+    color: var(--color-5);
+}
+.letter {
+    width: 80%;
+}
+#copyright {
+    width: 100%;
+    height: 10vh;
+    background-image: var(--bg-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--color-6);
+}
+#footer .social .iconify {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    filter: grayscale(1);
+    transition: 1s;
+}
+#footer .social .iconify:hover {
+    filter: grayscale(0);
+}
+
+
+
+
+
+
+@media (min-width:700px){
+    #header {
+        height: 100vh;
+        
+    }
+    .navbar-collapse {
+        background-color: transparent;
+        z-index: 2;
+        border-radius: 10px;
+    }
+    .nav-item a {
+        color: var(--color-7);
+    }
+    .hero-1 {
+        top: 150px;
+        left: 100px;
+        right: 100px;
+        bottom: -150px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .hero-1 .hero-image {
+        width: 95%;
+        height: 94%;
+        margin: 20px;
+        background-position:100% 30%;
+    }
+    .hero-1 .hero-text {
+        width: 40%;
+        padding: 150px 20px;
+    }
+    #about {
+        height: 150vh;
+        padding-top: 200px;
+    }
+    #for-client {
+        height: 100vh;
+    }
+    .catagories {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .service-card {
+        width: 30%;
+        height: 80vh;
+       
+    }
+    
+
+    #footer {
+        height: 60vh;
+        padding:20px 50px;
+        flex-direction: row;
+    }
+}
